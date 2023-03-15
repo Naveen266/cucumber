@@ -1,0 +1,7 @@
+
+@cart
+Scenario: add to cart                                         [90m# src/test/java/feature/commlogin.feature:13[0m
+  [32mGiven [0m[32muser lanuch the ecommerse login page[0m                  [90m# Stepdefination.LoginMain.user_lanuch_the_ecommerse_login_page()[0m
+  [32mWhen [0m[32mUser eneter the un [0m[32m[1m"Tester12@gmail.com"[0m[32m pw [0m[32m[1m"Tester@21"[0m [90m# Stepdefination.LoginMain.user_eneter_the_un_pw(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32menter the detail[0m                                        [90m# Stepdefination.LoginMain.enter_the_detail()[0m
+  [32mThen [0m[32mverif it is in cart[0m                                    [90m# Stepdefination.LoginMain.verif_it_is_in_cart()[0m

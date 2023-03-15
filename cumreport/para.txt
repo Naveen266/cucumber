@@ -1,0 +1,15 @@
+
+Scenario Outline: page signup                                             [90m# src/test/java/feature/Regcomm.feature:13[0m
+  [33mGiven [0m[33muser lanuch the comm browser[0m
+  [36mWhen [0m[36muser enter Tester 1 Tester21@gmail.com wistron Tester@21 Tester@21[0m
+  [36mThen [0m[36mI verify the <status> in step[0m
+
+Scenario Outline: page signup                                             [90m# src/test/java/feature/Regcomm.feature:14[0m
+  [33mGiven [0m[33muser lanuch the comm browser[0m
+  [36mWhen [0m[36muser enter Tester 2 Tester12@gmail.com wistron Tester@21 Tester@21[0m
+  [36mThen [0m[36mI verify the <status> in step[0m
+
+Scenario Outline: page signup                                        [90m# src/test/java/feature/Regcomm.feature:15[0m
+  [33mGiven [0m[33muser lanuch the comm browser[0m
+  [36mWhen [0m[36muser enter Tester 3 Tester33@gmail.com QT Tester@21 Tester@21[0m
+  [36mThen [0m[36mI verify the <status> in step[0m
