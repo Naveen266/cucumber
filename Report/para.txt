@@ -1,7 +1,39 @@
 
-@cart
-Scenario: add to cart                                         [90m# src/test/java/feature/commlogin.feature:13[0m
-  [32mGiven [0m[32muser lanuch the ecommerse login page[0m                  [90m# Stepdefination.LoginMain.user_lanuch_the_ecommerse_login_page()[0m
-  [32mWhen [0m[32mUser eneter the un [0m[32m[1m"Tester12@gmail.com"[0m[32m pw [0m[32m[1m"Tester@21"[0m [90m# Stepdefination.LoginMain.user_eneter_the_un_pw(java.lang.String,java.lang.String)[0m
-  [32mAnd [0m[32menter the detail[0m                                        [90m# Stepdefination.LoginMain.enter_the_detail()[0m
-  [32mThen [0m[32mverif it is in cart[0m                                    [90m# Stepdefination.LoginMain.verif_it_is_in_cart()[0m
+@Shipping
+Scenario Outline: place the order                                   [90m# src/test/java/feature/commlogin.feature:28[0m
+  [32mGiven [0m[32muser lanuch the ecommerse login page[0m                        [90m# Stepdefination.LoginMain.user_lanuch_the_ecommerse_login_page()[0m
+  [32mWhen [0m[32mUser eneter the un [0m[32m[1m"Tester12@gmail.com"[0m[32m pw [0m[32m[1m"Tester@21"[0m       [90m# Stepdefination.LoginMain.user_eneter_the_un_pw(java.lang.String,java.lang.String)[0m
+  [31mAnd [0m[31menter city [0m[31m[1mBengaluru[0m[31m ads [0m[31m[1mChintamani[0m[31m pin [0m[31m[1m563125[0m[31m mob [0m[31m[1m9876543210[0m [90m# Stepdefination.LoginMain.enter_city_ads_pin_mob(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[0m
+      [31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=111.0.1661.41)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'QT-INBG-LT2084', ip: '10.20.15.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6787d38bd142b7ce50982b3fd8f30a69, clickElement {id=1c558b4e-df65-4c82-826a-041754b5d222}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:53309}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\NAVEEN~1.KUM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53309/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (6787d38bd142b7ce50982b3fd8f30a69)] -> xpath: //button[@class='button-1 payment-method-next-step-button']]
+Session ID: 6787d38bd142b7ce50982b3fd8f30a69
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at Stepdefination.LoginMain.enter_city_ads_pin_mob(LoginMain.java:126)
+	at ✽.enter city Bengaluru ads Chintamani pin 563125 mob 9876543210(file:///C:/Users/naveen.kumarn/eclipse-workspace/Ecomm1/src/test/java/feature/commlogin.feature:23)
+[0m
+  [36mThen [0m[36mverify its placed[0m                                            [90m# Stepdefination.LoginMain.verify_its_placed()[0m

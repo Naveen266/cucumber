@@ -9,9 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/java/feature/commlogin.feature",
 		glue="Stepdefination",
-tags=" @cart",
+        tags=" @Shipping",
 		
-	plugin={"html:Report/para.html","pretty:Report/para.txt"}
+plugin={"html:Report/para.html","pretty:Report/para.txt"}
 		
 		)
 public class Runner1 {
